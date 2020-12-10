@@ -65,7 +65,6 @@ export class AuthService {
     }
 
     login(email: string, password: string,) {
-        debugger
         return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD0vP16I6Gz0mxTSTR2fh77YI9QgmBUrsI',
             {
                 email: email,

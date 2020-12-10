@@ -17,7 +17,6 @@ export class DataStorageService {
     }
 
     fetchRecipes() {
-debugger
         return this.http.get<Recipe[]>('https://shopping-c93f3-default-rtdb.firebaseio.com/recipes.json')
             .pipe(
                 map(recipes => {
